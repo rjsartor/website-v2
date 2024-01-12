@@ -20,7 +20,7 @@ export default function Home() {
         <title>Your Site Title</title>
         {/* other head elements */}
       </Head>
-      <body className={`${inter.className} flex flex-col md:flex-row p-24 justify-center`}>
+      <body className={`${inter.className} flex flex-col md:flex-row sm:flex-row pt-24 justify-center`}>
       <div className="layout-width">
           <LeftPane />
           <div className="flex-1">

@@ -11,7 +11,7 @@ const PROJECTS = [{
   {
     name: 'Meal Craft',
     url: 'mealcraft.heroku.app',
-    description: 'Search for recipes using whichever ingredients you have. Simply browse for ideas or login and save you favorites for later',
+    description: 'Search for recipes using whichever ingredients you have. Browse for ideas by entering ingredients or login and save your favorites for later.',
     image: '/images/mealcraft.png',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Heroku'],
   }
