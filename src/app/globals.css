@@ -2,26 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 45, 55, 85;
+  --background-end-rgb: 40, 50, 80;
+  --foreground-rgb: 255, 255, 255;
+  --primary-font-rgb: 245, 245, 245;
+  --secondary-font-rgb:180,180,180;
+  --tertiary-font-rgb: 120,120,120;
+  --highlight-font-rgb: 14, 211, 207;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --background-start-rgb: 18, 26, 50;
+    --background-end-rgb: 17, 24, 47;
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--primary-font-rgb));
   background: linear-gradient(
       to bottom,
-      transparent,
+      rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  );
+  font-family: 'Inter', sans-serif;
+  /* padding: 96px; */
+}
+
+.secondary-text {
+  color: rgb(var(--secondary-font-rgb)); /* Use for less prominent text */
+}
+
+.tertiary-text {
+  color: rgb(var(--tertiary-font-rgb)); /* Use for text that is even less prominent */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.layout-width {
+  width: 75%; /* 3/4 of the width */
+  /* other styles as needed */
+}
+
+/* Media queries for progressively smaller screens */
+@media (max-width: 1200px) { /* Example breakpoint for slightly smaller screens */
+  .layout-width {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) { /* Smaller tablets and large phones */
+  .layout-width {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) { /* Tablets and larger phones */
+  .layout-width {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) { /* Smaller tablets and phones */
+  .layout-width {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) { /* Small phones */
+  .layout-width {
+    width: 100%;
+  }
+}
+
+.social-link-hover:hover {
+  color: rgb(var(--highlight-font-rgb)); /* Using the primary font color */
+}
+
+.link-hover:hover {
+  color: rgb(var(--highlight-font-rgb));
+}
+
+nav ul li:hover {
+  color: rgb(var(--primary-font-rgb));
 }
