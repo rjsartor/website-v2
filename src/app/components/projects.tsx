@@ -1,23 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
+import { PROJECTS } from '../data/projects';
+import { ProjectType } from '../types/project.types';
 
-const PROJECTS = [{
-    name: 'RoadRate',
-    url: 'https://www.roadrate.app',
-    description: "Web and mobile social media platform for anonymously rating and reviewing drivers in the United States. Users can search license plates to view ratings and reviews, or login to claim their own plates and reviews others'. Built with a React and React Native front end and Node.js back end",
-    image: '/images/roadrate.png',
-    tags: ['React', 'React-Native', 'Node.js', 'Auth0', 'MongoDB', 'Netlify', 'Heroku']
-  },
-  {
-    name: 'Meal Craft',
-    url: 'mealcraft.heroku.app',
-    description: 'Search for recipes using whichever ingredients you have. Browse for ideas by entering ingredients or login and save your favorites for later.',
-    image: '/images/mealcraft.png',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Heroku'],
-  }
-];
+type ProjectCardProps = {
+  project: ProjectType;
+};
 
-const ProjectCard = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { name, url, description, image, tags = [] } = project;
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className="group block mb-4">
@@ -43,14 +33,14 @@ const ProjectCard = ({ project }) => {
   );
 }
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
-    <main className="">
-      <h1 className="text-xl mb-8">PROJECTS</h1>
+    <section className="">
+      <h1 className="text-xl mb-8">PROJECT SPOTLIGHT</h1>
       <div className="flex flex-col mb-6 gap-4">
-        {PROJECTS.map(p => <ProjectCard key={p.name} project={p} />)}
+        {PROJECTS.map((p, index) => <ProjectCard key={index} project={p} />)}
       </div>
-    </main>
+    </section>
   )
 }
 

@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import { Footer } from './components/footer'
 
 export const metadata = {
   title: 'Randy Sartor',
@@ -26,6 +27,7 @@ export default function RootLayout({
         <div className='header-div'>
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   )

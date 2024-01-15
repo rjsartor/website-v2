@@ -61,7 +61,7 @@ html {
 @media (max-width: 1500px) { /* Tablets and larger phones */
   .layout-width {
     width: 75%;
-  }
+  } 
 }
 
 @media (max-width: 1350px) { /* Tablets and larger phones */
@@ -73,6 +73,7 @@ html {
 @media (max-width: 1200px) { /* Smaller tablets and phones */
   .layout-width {
     width: 90%;
+    padding-left: 12px;
   }
 }
 
