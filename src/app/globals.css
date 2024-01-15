@@ -48,38 +48,31 @@ html {
 }
 
 .layout-width {
-  width: 80%; /* 3/4 of the width */
+  width: 65%; /* 3/4 of the width */
   /* other styles as needed */
 }
 
-/* Media queries for progressively smaller screens */
-@media (max-width: 1200px) { /* Example breakpoint for slightly smaller screens */
+@media (max-width: 1600px) { /* Example breakpoint for slightly smaller screens */
   .layout-width {
-    width: 80%;
+    width: 70%;
   }
 }
 
-@media (max-width: 1024px) { /* Smaller tablets and large phones */
+@media (max-width: 1500px) { /* Tablets and larger phones */
+  .layout-width {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1350px) { /* Tablets and larger phones */
   .layout-width {
     width: 85%;
   }
 }
 
-@media (max-width: 768px) { /* Tablets and larger phones */
+@media (max-width: 1200px) { /* Smaller tablets and phones */
   .layout-width {
     width: 90%;
-  }
-}
-
-@media (max-width: 600px) { /* Smaller tablets and phones */
-  .layout-width {
-    width: 95%;
-  }
-}
-
-@media (max-width: 480px) { /* Small phones */
-  .layout-width {
-    width: 100%;
   }
 }
 

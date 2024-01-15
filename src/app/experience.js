@@ -68,20 +68,20 @@ const ListItem = ({ job }) => {
 
 const Experience = () => {
   return (
-    <div className="m-4">
+    <div className="">
       <h1 className="text-xl mb-8">EXPERIENCE</h1>
-      <div className="job mb-8">
-        <div className="job-header flex flex-col justify-between items-center mb-2">
+      <div className="job">
+        <div className="job-header flex flex-col justify-between items-center">
           <ListItem job={EXPERIENCE.robin} />
           <Spacer height={4} />
           <ListItem job={EXPERIENCE.thinkful} />
         </div>
+        <h3 className='text-lg italic text-end'>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='link-hover'>
+            View full resume <FaExternalLinkAlt className="inline-block ml-2" />
+          </a>
+        </h3>
       </div>
-      <h3 className='text-lg italic text-end'>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='link-hover'>
-          View full resume <FaExternalLinkAlt className="inline-block ml-2" />
-        </a>
-      </h3>
     </div>
   )
 }

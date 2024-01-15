@@ -26,8 +26,7 @@ const SocialLinks = () => {
       />
       <Link 
         Icon={FaEnvelope}
-        url="https://mailto:randal.sartor@gmail.com/randal.sartor"
-        label="Gmail"
+        url="mailto:randal.sartor@gmail.com?subject=Job Inquiry&body=Hello Randy, "
       />
     </div>
   );

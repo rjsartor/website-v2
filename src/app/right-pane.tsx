@@ -7,19 +7,19 @@ import Spacer from './spacer';
 
 const RightPane = () => {
   return (
-    <div className="w-full md:w-2/3 ml-auto overflow-auto">
+    <div className="w-full lg:ml-[33%] lg:w-2/3 overflow-auto">
       <section id="about">
         <About />
       </section>
-      <Spacer height={2} />
+      <Spacer height={4} />
       <section id="experience">
         <Experience />
       </section>
-      <Spacer height={2} />
+      <Spacer height={4} />
       <section id="projects">
         <Project />
       </section>
-      <Spacer height={32} />
+      <Spacer height={40} />
     </div>
   );
 }

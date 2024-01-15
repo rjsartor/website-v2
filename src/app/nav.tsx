@@ -13,7 +13,7 @@ const Nav = () => {
   const scrollToSection = (sectionId: sections) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offsetTop = section.offsetTop - 96;
+      const offsetTop = section.offsetTop - 100;
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth',
@@ -29,7 +29,6 @@ const Nav = () => {
 
 
   useEffect(() => {
-    // Function to check if a section is in view
     const initialSection = window.location.hash.replace('#', '') as sections;
     if (Object.values(sections).includes(initialSection)) {
       setSelectedSection(initialSection);
@@ -44,12 +43,15 @@ const Nav = () => {
       });
     };
 
-    // Set up IntersectionObserver
+    const viewHeight = window.innerHeight;
+
+    const rootMarginTop = -(viewHeight * 0.2) + 'px';
+    const rootMarginBottom = -(viewHeight * 0.7) + 'px';
+
     const observer = new IntersectionObserver(handleIntersection, {
-      rootMargin: '-50% 0px -50% 0px',
+      rootMargin: `${rootMarginTop} 0px ${rootMarginBottom} 0px`,
     });
 
-    // Observe each section
     Object.values(sections).forEach((section) => {
       const sectionEl = document.getElementById(section);
       if (sectionEl) {
@@ -57,7 +59,7 @@ const Nav = () => {
       }
     });
 
-    // Clean up
+
     return () => {
       Object.values(sections).forEach((section) => {
         const sectionEl = document.getElementById(section);

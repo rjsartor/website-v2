@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
     <a href={url} target="_blank" rel="noopener noreferrer" className="group block mb-4">
       <div className="flex flex-row items-start rounded-lg overflow-hidden border border-transparent transition duration-300 ease-in-out hover:bg-gray-800 hover:border-gray-700">
         <div className="w-1/4 p-4 mt-3">
-          <Image src={image} alt={name} width={150} height={75} objectFit="cover" className="align-top" />
+          <Image src={image} alt={name} width={150} height={75} className="align-top" />
         </div>
         <div className="flex flex-col p-4 w-3/4">
           <h3 className="text-white text-xl font-semibold mt-2">
@@ -44,14 +44,14 @@ const ProjectCard = ({ project }) => {
 }
 
 const Projects = () => {
-    return (
-      <main className="m-4">
-        <h1 className="text-xl mb-8">PROJECTS</h1>
-        <div className="flex flex-col mb-6 gap-4">
-          {PROJECTS.map(p => <ProjectCard key={p.name} project={p} />)}
-        </div>
-      </main>
-    )
+  return (
+    <main className="">
+      <h1 className="text-xl mb-8">PROJECTS</h1>
+      <div className="flex flex-col mb-6 gap-4">
+        {PROJECTS.map(p => <ProjectCard key={p.name} project={p} />)}
+      </div>
+    </main>
+  )
 }
 
 export default Projects;
