@@ -50,8 +50,8 @@ const ListItem = ({ job }) => {
           <a className='link-hover' href={companyUrl} target='_blank'> {company} <FaExternalLinkAlt className="inline-block ml-2" /></a>
         </h3>
         <h4 className="tertiary-text text-xl mb-2">{description}</h4>
-        <ul className='mb-4 secondary-text'>
-          {achievements.map((p, i) => <li key={i}>- {p}</li>)}
+        <ul style={{ listStyleType: 'disc' }} className='mb-4 secondary-text'>
+          {achievements.map((p, i) => <li key={i}>{p}</li>)}
           
         </ul>
         <div className="flex flex-wrap mt-2">
