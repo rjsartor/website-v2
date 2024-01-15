@@ -10,7 +10,8 @@ export default function About() {
         </p>
         <br/>
         <p>
-          {"I'm an expert in JS/TS frameworks and looking for mid or senior level roles where I can continue developing my technical skills and grow into an engineering leader. I'm comfortable working across the stack, but equally open to specializing for the right opportunity. I'm most passionate about mission-driven work and like building products or tools that make a positive impact."}
+          {"Now I'm looking for new mid or senior level roles where I can continue developing my technical skills and grow into an engineering leader. Javascript and Typescript are my bread and butter, but I'm open an eager to learning any new technologies. I love solving different problems across the tech stack but would also be more than happy to specialize for the right role. cript and Typescript based tech stacks. I'm comfortable working across the stack, but equally open to specializing for the right opportunity." 
+          + " I am most passionate about mission-driven and I like building products or tools that make a positive impact."}
         </p>
         <br/>
         <p>
