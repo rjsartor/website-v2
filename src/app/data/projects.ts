@@ -11,5 +11,12 @@ export const PROJECTS = [{
 //   description: 'Search for recipes using whichever ingredients you have. Browse for ideas by entering ingredients or login and save your favorites for later.',
 //   image: '/images/mealcraft.png',
 //   tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Heroku'],
-// }
+// },
+{
+  name: 'Portfolio v1',
+  url: 'https://website-v1-one-zeta.vercel.app/',
+  description: 'The first version of my personal portfolio, a SPA with full-screen sections, built using React and Redux.',
+  image: '/images/website-v1.png',
+  tags: ['React', 'Redux', 'CSS', 'Vercel'],
+}
 ];

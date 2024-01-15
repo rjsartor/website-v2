@@ -18,7 +18,7 @@ export const EXPERIENCE = [{
   },
   {
     company: 'Thinkful Coding Bootcamp',
-    date: '2018-2019',
+    date: '2018 - 2019',
     title: 'Engineering Immersion student',
     companyUrl: 'https://www.thinkful.com/',
     description: "Five month, full-time coding bootcamp specializing in full stack web development",

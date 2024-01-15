@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 const Projects: React.FC = () => {
   return (
     <section className="">
-      <h1 className="text-xl mb-8">PROJECT SPOTLIGHT</h1>
+      <h1 className="text-xl mb-8">PROJECTS</h1>
       <div className="flex flex-col mb-6 gap-4">
         {PROJECTS.map((p, index) => <ProjectCard key={index} project={p} />)}
       </div>
