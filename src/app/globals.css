@@ -88,3 +88,7 @@ html {
 nav ul li:hover {
   color: rgb(var(--primary-font-rgb));
 }
+
+.group:hover .link-hover {
+  color:  rgb(var(--highlight-font-rgb));
+}
