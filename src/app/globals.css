@@ -13,7 +13,7 @@
   --primary-font-rgb: 245, 245, 245;
   --secondary-font-rgb:180,180,180;
   --tertiary-font-rgb: 120,120,120;
-  --highlight-font-rgb: 14, 211, 207;
+  --highlight-font-rgb: 14, 165, 233;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,13 +26,17 @@
 
 body {
   color: rgb(var(--primary-font-rgb));
-  background: linear-gradient(
+  background: url(/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: right; 
+  /* background-size: cover; */
+  /* linear-gradient(
       to bottom,
       rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb))
-  );
+  ); */
   font-family: 'Inter', sans-serif;
-  /* padding: 96px; */
 }
 
 .secondary-text {
@@ -41,6 +45,12 @@ body {
 
 .tertiary-text {
   color: rgb(var(--tertiary-font-rgb)); /* Use for text that is even less prominent */
+}
+
+.technology-tag {
+  color: rgb(var(--highlight-font-rgb)); /* Use for text that is even less prominent */
+  background: rgb(var(--highlight-font-rgb), .2);
+  border-radius: 9999px;
 }
 
 html {

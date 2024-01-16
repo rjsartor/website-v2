@@ -1,8 +1,8 @@
 import React from 'react';
-import Spacer from './spacer';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { EXPERIENCE } from '../data/experience';
 import { ExperienceType } from '../types/experience.types';
+import TechnologyTags from './technology-tags';
 
 type ListItemProps = {
   experience: ExperienceType;
@@ -18,8 +18,8 @@ const ListItem: React.FC<ListItemProps> = ({ experience }) => {
         </div>
         <div className="flex flex-col p-4 w-3/4">
           <h3 className="text-xl font-bold mb-2">
-            {title} <span className='tertiary-text'>at</span><br></br> 
-            <a className='link-hover' href={companyUrl} target='_blank'>{company}</a>
+            {title} <span className='tertiary-text'>at</span><br></br>
+            <span className='link-hover'>{company}</span>
           </h3>
           <h4 className="tertiary-text text-xl mb-2">{description}</h4>
           <ul style={{ listStyleType: 'disc' }} className='mb-4 secondary-text'>
@@ -27,11 +27,7 @@ const ListItem: React.FC<ListItemProps> = ({ experience }) => {
             
           </ul>
           <div className="flex flex-wrap mt-2">
-            {skills.map((skill) => (
-              <span key={skill} className="bg-teal-700 text-teal-200 rounded-full px-3 py-1 text-xs font-semibold mr-2 mb-2">
-                {skill}
-              </span>
-            ))}
+            <TechnologyTags tags={skills} />
           </div>
         </div>
       </div>

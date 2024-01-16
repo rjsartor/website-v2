@@ -19,13 +19,13 @@ export const EXPERIENCE = [{
   {
     company: 'Thinkful Coding Bootcamp',
     date: '2018 - 2019',
-    title: 'Engineering Immersion student',
+    title: 'Software Engineering student',
     companyUrl: 'https://www.thinkful.com/',
     description: "Five month, full-time coding bootcamp specializing in full stack web development",
     // . Contributed to Robin's core product, the Assist App, faciliating medical scribes to generate documentation of exam room video footage, designed and built the world's most accurate E&M code billing calculator, and lead team designing and building a scribe training application.", 
     achievements: [
       'Learned industry best practices and practical software development standards with a focus on HTML5, CSS3, JavaScript, jQuery, Node.js, React, Redux, and algorithms & data structures',
-      'Created and deployed mobile-first applications while learning new languages and frameworks by collaborating several hours every week with a senior web developer'
+      'Created and deployed mobile-first applications while learning new languages and frameworks by collaborating several hours every week with senior web developers'
     ],
     skills: ['Javascript', 'HTML5', 'CSS3', 'React', 'Redux', 'NodeJS', 'MongoDB', 'Heroku'],
   },

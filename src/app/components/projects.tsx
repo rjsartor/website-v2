@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { PROJECTS } from '../data/projects';
 import { ProjectType } from '../types/project.types';
+import TechnologyTags from './technology-tags';
 
 type ProjectCardProps = {
   project: ProjectType;
@@ -21,11 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </h3>
           <p className="secondary-text text-base mt-2 secondary-text">{description}</p>
           <div className="flex flex-wrap mt-4">
-            {tags.map((tag, index) => (
-              <span key={index} className="bg-teal-700 text-teal-200 rounded-full px-3 py-1 text-xs font-semibold mr-2 mb-2">
-                {tag}
-              </span>
-            ))}
+            <TechnologyTags tags={tags} />
           </div>
         </div>
       </div>
