@@ -25,12 +25,12 @@
 }
 
 body {
-  color: rgb(var(--primary-font-rgb));
-  background: url(/images/background.png);
+  color: rgb(var(--primary-font-rgb), 1);
+  background: url(/images/background-2.png);
   background-size: cover;
+  /* background: rgb(17 24 39); darker blue */
   background-repeat: no-repeat; 
   background-position: right; 
-  /* background-size: cover; */
   /* linear-gradient(
       to bottom,
       rgb(var(--background-start-rgb)),
@@ -97,6 +97,10 @@ html {
 
 nav ul li:hover {
   color: rgb(var(--primary-font-rgb));
+}
+
+.group:hover {
+  border-color:  rgb(var(--highlight-font-rgb));
 }
 
 .group:hover .link-hover {

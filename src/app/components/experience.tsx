@@ -12,7 +12,7 @@ const ListItem: React.FC<ListItemProps> = ({ experience }) => {
   const { date, title, companyUrl, description, skills, company, achievements } = experience;
    return (
     <a href={companyUrl} target="_blank" rel="noopener noreferrer" className="group block mb-4">
-      <div className="group flex flex-row items-start rounded-lg overflow-hidden border border-transparent transition duration-300 ease-in-out hover:bg-gray-800 hover:border-gray-700">
+      <div className="group flex flex-row items-start rounded-lg overflow-hidden border border-transparent transition duration-300 ease-in-out hover:bg-gray-800">
         <div className="w-1/4 p-4">
           <p className="text-lg font-medium secondary-text">{date}</p>
         </div>

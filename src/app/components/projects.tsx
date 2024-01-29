@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { name, url, description, image, tags = [] } = project;
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className="group block mb-4">
-      <div className="group flex flex-row items-start rounded-lg overflow-hidden border border-transparent transition duration-300 ease-in-out hover:bg-gray-800 hover:border-gray-700">
+      <div className="group flex flex-row items-start rounded-lg overflow-hidden border border-transparent transition duration-300 ease-in-out hover:bg-gray-800">
         <div className="w-1/4 p-4 mt-1">
           <Image src={image} alt={name} width={150} height={75} className="align-top" />
         </div>

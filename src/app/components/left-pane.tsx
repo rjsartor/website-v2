@@ -13,7 +13,7 @@ const LeftPane = () => {
           <h1 className="text-5xl font-medium pb-3">Randal Sartor</h1>
           <h4 className="text-2xl secondary-text pb-3">Software Engineer</h4>
           <Spacer height={2} />
-          <Image className="rounded-full object-cover" src='/images/me-and-amber.png' alt='avatar' width={200} height={100} />
+          <Image style={{ borderRadius: '50%', height: 190, width: 215 }} className='rounded-full' src='/images/me-and-amber.png' alt='avatar' width={200} height={170} />
         </div>
         <Spacer height={5} />
         <div className="hidden lg:block">
