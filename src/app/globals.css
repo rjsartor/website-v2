@@ -40,15 +40,19 @@ body {
 }
 
 .secondary-text {
-  color: rgb(var(--secondary-font-rgb)); /* Use for less prominent text */
+  color: rgb(var(--secondary-font-rgb));
 }
 
 .tertiary-text {
-  color: rgb(var(--tertiary-font-rgb)); /* Use for text that is even less prominent */
+  color: rgb(var(--tertiary-font-rgb));
+}
+
+.highlight-text {
+  color: rgb(var(--highlight-font-rgb));
 }
 
 .technology-tag {
-  color: rgb(var(--highlight-font-rgb)); /* Use for text that is even less prominent */
+  color: rgb(var(--highlight-font-rgb));
   background: rgb(var(--highlight-font-rgb), .2);
   border-radius: 9999px;
 }

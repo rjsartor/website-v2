@@ -3,7 +3,7 @@ export const EXPERIENCE = [{
     date: '2019 - 2023',
     title: 'Full stack software engineer',
     companyUrl: 'https://www.linkedin.com/company/robin-healthcare/',
-    description: "Elimatined barriers to health by building applications and services used by doctors and administrators to automate and assist medical documentation.",
+    description: "Elimatined barriers to health by building applications and services used by doctors and administrators to automate and assist medical documentation",
     achievements: [
       "Led development of an employee onboarding application that cut training time from months to two weeks for thousands of medical scribes",
       "Designed a 5X revenue-boosting E&M billing code calculator becoming the company's core intellectual property.",
