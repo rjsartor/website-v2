@@ -6,6 +6,13 @@ export const PROJECTS = [{
   tags: ['React', 'React-Native', 'Node.js', 'Auth0', 'MongoDB', 'Netlify', 'Heroku']
 },
 {
+  name: 'Support Ticket Demo',
+  url: 'https://support-ticket-demo.vercel.app/',
+  description: "A ticket support demo that allows users to post support tickets and admins to view, update, and respond to them. Focuses on server-side rendering with Next.js.",
+  image: '/images/support-ticket-demo.png',
+  tags: ['Next.js', 'Tailwind CSS', 'Postgres', 'Vercel']
+},
+{
   name: 'MealCraft',
   url: 'https://mealcraft-client-127069d45f77.herokuapp.com/',
   description: 'Search for recipes using whichever ingredients you have. Browse for meals by entering ingredients or login and save your favorites for later.',
