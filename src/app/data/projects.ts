@@ -8,7 +8,7 @@ export const PROJECTS = [{
 {
   name: 'Support Ticket Demo',
   url: 'https://support-ticket-demo.vercel.app/',
-  description: "A ticket support demo that allows users to post support tickets and admins to view, update, and respond to them. Focuses on server-side rendering with Next.js.",
+  description: "A support ticket demo that allows users to post support tickets and admins to view, update, and respond to them. Focuses on server-side rendering with Next.js.",
   image: '/images/support-ticket-demo.png',
   tags: ['Next.js', 'Tailwind CSS', 'Postgres', 'Vercel']
 },
