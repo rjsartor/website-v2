@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import { Footer } from './components/footer'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'Randy Sartor',
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body>
         <div className='header-div'>
           {children}
+          <Analytics />
         </div>
         <Footer />
       </body>
