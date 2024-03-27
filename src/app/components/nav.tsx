@@ -79,7 +79,7 @@ const Nav = () => {
     `inline-block mr-2 ${selectedSection === section ? 'w-9' : 'w-3'} h-1 bg-current`;
 
   return (
-    <nav>
+    <nav className="flex">
       <ul>
         <li className={navItemClass(sections.about)} onClick={() => handleNavClick(sections.about)}>
           <span className={bulletPointClass(sections.about)}></span>

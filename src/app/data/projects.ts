@@ -13,11 +13,11 @@ export const PROJECTS = [{
   tags: ['Typescript', 'Next.js', 'Tailwind CSS', 'Postgres', 'Vercel']
 },
 {
-  name: 'MealCraft',
+  name: 'Acme Theaters',
   url: 'https://mealcraft-client-127069d45f77.herokuapp.com/',
-  description: 'Search for recipes using whichever ingredients you have. Browse for meals by entering ingredients or login and save your favorites for later.',
-  image: '/images/mealcraft.png',
-  tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Heroku'],
+  description: 'Search and filter for new releases on show at Acme Theaters. Uses The Movie Database to fetch latest movies and server-side infite scrolling to display results.',
+  image: '/images/acme-theaters.png',
+  tags: ['React', 'Material UI', 'Tailwind CSS', 'Vercel'],
 },
 {
   name: 'Portfolio v1',

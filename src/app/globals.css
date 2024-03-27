@@ -62,8 +62,7 @@ html {
 }
 
 .layout-width {
-  width: 65%; /* 3/4 of the width */
-  /* other styles as needed */
+  width: 65%;
 }
 
 @media (max-width: 1600px) { /* Example breakpoint for slightly smaller screens */
