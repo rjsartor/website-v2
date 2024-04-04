@@ -6,11 +6,18 @@ export const PROJECTS = [{
   tags: ['Typescript', 'React', 'React-Native', 'Node.js', 'Auth0', 'MongoDB', 'Netlify', 'Heroku']
 },
 {
+  name: 'Newburyport Watercolors',
+  url: 'https://www.newburyportwatercolors.com',
+  description: "A website built and maintained for a local client, Newburyport Watercolors showcases the portfolio of an art studio specializing in watercolor painting. Designed to match the artist's aesthetic, it features an online gallery, artist profile, and purchasing options via Etsy.",
+  image: '/images/newburyportwatercolors.png',
+  tags: ['Typescript', 'Next.js', 'Tailwind CSS', 'Vercel']
+},
+{
   name: 'Support Ticket Demo',
   url: 'https://support-ticket-demo.vercel.app/',
   description: "A support ticket demo that allows users to post support tickets and admins to view, update, and respond to them. Focuses on server-side rendering with Next.js.",
   image: '/images/support-ticket-demo.png',
-  tags: ['Typescript', 'Next.js', 'Tailwind CSS', 'Postgres', 'Vercel']
+  tags: ['Typescript', 'Next.js', 'Sendgrid', 'Tailwind CSS', 'Postgres', 'Vercel']
 },
 {
   name: 'Acme Theaters',

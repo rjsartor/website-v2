@@ -6,7 +6,7 @@ import { CursorHighlight } from './components/cursor-highlight';
 
 export const metadata = {
   title: 'Randy Sartor',
-  description: 'Website built with Next.js',
+  description: 'Personal Portfolio',
 }
 
 const inter = Inter({ 
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
        <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Your Site Title</title>
+        <title>Randal Sartor</title>
       </Head>
       <body>
         <div className='header-div'>
