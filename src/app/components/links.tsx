@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { trackButtonClick } from '../services/mixpanel';
 
 const Link = (props: any) => {
   const { Icon, url, label } = props;
@@ -18,15 +19,18 @@ const SocialLinks = () => {
         Icon={FaGithub}
         url="https://github.com/rjsartor"
         label="GitHub"
+        onClick={() => trackButtonClick('GitHub')}
       />
       <Link 
         Icon={FaLinkedin}
         url="https://linkedin.com/in/rjsartor"
         label="LinkedIn"
+        onClick={() => trackButtonClick('LinkedIn')}
       />
       <Link 
         Icon={FaEnvelope}
         url="mailto:randal.sartor@gmail.com?subject=Job Inquiry&body=Hello Randy, "
+        onClick={() => trackButtonClick('Gmail')}
       />
     </div>
   );

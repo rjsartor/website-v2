@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Spacer from './spacer';
+import { trackPageView } from "../services/mixpanel";
 
 enum sections {
   about = 'about',
@@ -24,6 +25,7 @@ const Nav = () => {
   const handleNavClick = (sectionId: sections) => {
     setSelectedSection(sectionId);
     scrollToSection(sectionId);
+    trackPageView(sectionId);
     window.history.pushState(null, '', '#' + sectionId);
   };
 

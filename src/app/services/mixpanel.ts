@@ -1,11 +1,11 @@
 import mixpanel from 'mixpanel-browser';
 
-const MIXPANEL_TOKEN = process.env.NEXT_PUBLIC_MIXPANEL_TOKEN;
+const MIXPANEL_TOKEN = process.env.NEXT_PUBLIC_MIXPANEL_TOKEN; 
+// const MIXPANEL_TOKEN = 'LOCAL';
 
 const initializeMixpanel = (): void => {
   if (typeof window !== 'undefined' && MIXPANEL_TOKEN) {
     mixpanel.init(MIXPANEL_TOKEN, {debug: true, track_pageview: true, persistence: 'localStorage'});
-    console.log('mixpanel', mixpanel)
   }
 };
 
