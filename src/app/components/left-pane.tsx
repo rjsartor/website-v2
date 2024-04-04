@@ -7,11 +7,11 @@ import Image from 'next/image';
 
 const LeftPane = () => {
   return (
-    <div className="lg:fixed lg:h-screen md:justify-left flex flex-col justify-center">
+    <div className="lg:fixed lg:h-screen flex flex-col">
       <div className="flex flex-col overflow-auto h-3/4">
         <div className="flex flex-col mb-2">
           <h1 className="text-5xl font-medium pb-3">Randal Sartor</h1>
-          <h4 className="text-2xl secondary-text pb-3">Software Engineer</h4>
+          <h4 className="text-xl secondary-text pb-3">SOFTWARE ENGINEER</h4>
           <Spacer height={2} />
           <Image className='rounded-full' src='/images/amber-and-I-square.png' alt='avatar' width={225} height={225} />
         </div>
