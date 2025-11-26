@@ -44,7 +44,7 @@ const Experience = () => {
         {EXPERIENCE.map((e, index) => <ListItem key={index} experience={e} />)}
       </div>
       <h3 className='link-hover italic text-3xl text-end'>
-        <a href="/randal-sartor-resume.pdf" target="_blank" rel="noopener noreferrer" onClick={() => trackButtonClick('Resume')}>
+        <a href="/resume-2025.pdf" target="_blank" rel="noopener noreferrer" onClick={() => trackButtonClick('Resume')}>
           View full resume <FaExternalLinkAlt className="inline-block ml-2" />
         </a>
       </h3>
