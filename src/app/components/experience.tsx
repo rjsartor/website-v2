@@ -37,17 +37,30 @@ const ListItem: React.FC<ListItemProps> = ({ experience }) => {
 };
 
 const Experience = () => {
+    const viewResumeButton = (
+        <div className='flex justify-end items-baseline'>
+            <a 
+                href="/resume-2025.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onClick={() => trackButtonClick('Resume')}
+                className='inline-flex gap-3 px-6 py-3 text-xl font-bold bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded-lg transition-all duration-300 ease-in-out transform'
+            >
+                View Full Resume <FaExternalLinkAlt className="text-lg" />
+            </a>
+        </div>
+    )
   return (
     <section>
-      <h1 className="text-xl mb-8">EXPERIENCE</h1>
+        <div className="flex justify-between align-items-center mb-6">
+             <h1 className="text-xl mb-8">EXPERIENCE</h1>
+             {viewResumeButton}
+        </div>
+     
       <div className="flex flex-col mb-6 gap-4">
         {EXPERIENCE.map((e, index) => <ListItem key={index} experience={e} />)}
       </div>
-      <h3 className='link-hover italic text-3xl text-end'>
-        <a href="/resume-2025.pdf" target="_blank" rel="noopener noreferrer" onClick={() => trackButtonClick('Resume')}>
-          View full resume <FaExternalLinkAlt className="inline-block ml-2" />
-        </a>
-      </h3>
+      {viewResumeButton}
     </section>
   )
 }
