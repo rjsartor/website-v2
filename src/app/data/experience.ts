@@ -2,7 +2,7 @@ export const EXPERIENCE = [
     {
         company: 'PVcase',
         date: '2024-Present',
-        title: 'Senior Full Stack Software Engineer',
+        title: 'Senior Software Engineer / Technical Lead',
         companyUrl: 'https://www.linkedin.com/company/pvcase/',
         description: "Moving solar projects forward with a single end-to-end platform for site selection, design, and yield optimization.",
         achievements: [

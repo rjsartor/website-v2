@@ -14,7 +14,7 @@ const Link = (props: any) => {
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-start space-x-4 mt-auto gap-2 tertiary-text">
+    <div className="flex justify-start space-x-4 gap-2 tertiary-text">
       <Link 
         Icon={FaGithub}
         url="https://github.com/rjsartor"

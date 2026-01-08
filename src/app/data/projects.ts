@@ -1,11 +1,4 @@
 export const PROJECTS = [{
-  name: 'Road Rate',
-  url: 'https://www.roadrate.app',
-  description: "A fully functioning web and mobile social media platform for anonymously rating and reviewing drivers in the United States. Users can search license plates to view ratings and reviews, or login to leave reviews and claim their own plates. Built with a React/React-Native front end and Node/Express back end, using Auth0 for authentication, and deployed with Netlify and Heroku.",
-  image: '/images/road-rate.png',
-  tags: ['Typescript', 'React', 'React-Native', 'Node.js', 'Auth0', 'MongoDB', 'Netlify', 'Heroku']
-},
-{
   name: 'Newburyport Watercolors',
   url: 'https://www.newburyportwatercolors.com',
   description: "A website built and maintained for a local client, Newburyport Watercolors showcases the portfolio of an art studio specializing in watercolor painting. Designed to match the artist's aesthetic, it features an online gallery, artist profile, and purchasing options via Etsy.",
@@ -18,6 +11,13 @@ export const PROJECTS = [{
   description: "A support ticket demo that allows users to post support tickets and admins to view, update, and respond to them. Focuses on server-side rendering with Next.js.",
   image: '/images/support-ticket-demo.png',
   tags: ['Typescript', 'Next.js', 'Sendgrid', 'Tailwind CSS', 'Postgres', 'Vercel']
+},
+{
+  name: 'Road Rate',
+  url: 'https://www.roadrate.app',
+  description: "A web and mobile social media platform for anonymously rating and reviewing drivers in the United States. Users can search license plates to view ratings and reviews, or login to leave reviews and claim their own plates. Built with a React/React-Native front end and Node/Express back end, using Auth0 for authentication, and deployed with Netlify and Heroku.",
+  image: '/images/road-rate.png',
+  tags: ['Typescript', 'React', 'React-Native', 'Node.js', 'Auth0', 'MongoDB', 'Netlify', 'Heroku']
 },
 {
   name: 'Acme Theaters',
